@@ -19,13 +19,13 @@
     }
 
     body {
-      /* フェルンの魔法のような深い夜空のグラデーション + 星空 */
-      background: radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.15), transparent 40%),
-        radial-gradient(circle at 80% 25%, rgba(255, 255, 255, 0.12), transparent 35%),
-        radial-gradient(circle at 60% 80%, rgba(255, 255, 255, 0.08), transparent 40%),
-        linear-gradient(160deg, #0b1f2b 0%, #123548 45%, #1f4f5f 100%);
+      /* 紫のグラデーション + 星空、お守りバッジの配色に合わせたデザイン */
+      background: radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.18), transparent 40%),
+        radial-gradient(circle at 80% 25%, rgba(255, 255, 255, 0.14), transparent 35%),
+        radial-gradient(circle at 60% 80%, rgba(255, 255, 255, 0.1), transparent 40%),
+        linear-gradient(160deg, #2b1a40 0%, #4a2f66 45%, #7a5a9c 100%);
       background-attachment: fixed;
-      color: #eef6f3;
+      color: #f3edfa;
       font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', serif;
       line-height: 1.8;
     }
@@ -46,8 +46,8 @@
       height: 140px;
       margin: 0 auto 20px;
       border-radius: 50%;
-      border: 2px solid rgba(182, 227, 214, 0.6);
-      box-shadow: 0 0 24px rgba(182, 227, 214, 0.35), inset 0 0 12px rgba(182, 227, 214, 0.2);
+      border: 2px solid rgba(226, 203, 247, 0.6);
+      box-shadow: 0 0 24px rgba(226, 203, 247, 0.4), inset 0 0 12px rgba(226, 203, 247, 0.2);
       overflow: hidden;
       background-color: rgba(255, 255, 255, 0.05);
       display: flex;
@@ -74,13 +74,13 @@
       font-size: 30px;
       font-weight: 600;
       letter-spacing: 0.08em;
-      color: #e8f3ee;
-      text-shadow: 0 0 18px rgba(182, 227, 214, 0.45);
+      color: #f5effd;
+      text-shadow: 0 0 18px rgba(226, 203, 247, 0.5);
     }
 
     .profile-english-name {
       margin: 0;
-      color: #a9d8c9;
+      color: #d8bdf0;
       font-size: 14px;
       letter-spacing: 0.15em;
     }
@@ -89,15 +89,15 @@
       width: 60px;
       height: 1px;
       margin: 20px auto 0;
-      background: linear-gradient(90deg, transparent, rgba(182, 227, 214, 0.8), transparent);
+      background: linear-gradient(90deg, transparent, rgba(226, 203, 247, 0.85), transparent);
     }
 
     .profile-section {
       margin: 0 0 22px;
       padding: 20px 24px;
-      border: 1px solid rgba(182, 227, 214, 0.25);
+      border: 1px solid rgba(226, 203, 247, 0.3);
       border-radius: 10px;
-      background-color: rgba(255, 255, 255, 0.04);
+      background-color: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(2px);
     }
 
@@ -105,7 +105,7 @@
       margin: 0 0 12px;
       font-size: 17px;
       font-weight: 600;
-      color: #cde9df;
+      color: #e7d6f7;
       letter-spacing: 0.04em;
       display: flex;
       align-items: center;
@@ -114,14 +114,14 @@
 
     .profile-section-title::before {
       content: '✦';
-      color: rgba(182, 227, 214, 0.9);
+      color: rgba(226, 203, 247, 0.95);
       font-size: 14px;
     }
 
     .profile-section p {
       margin: 0 0 10px;
       font-size: 15px;
-      color: rgba(238, 246, 243, 0.92);
+      color: rgba(243, 237, 250, 0.92);
     }
 
     .profile-section p:last-child {
@@ -129,7 +129,7 @@
     }
 
     .profile-section strong {
-      color: #d6f0e7;
+      color: #ecdcfb;
     }
 
     .matcha-figure {
@@ -143,7 +143,7 @@
       aspect-ratio: 4 / 3;
       margin: 0 auto;
       border-radius: 10px;
-      border: 1px solid rgba(182, 227, 214, 0.3);
+      border: 1px solid rgba(226, 203, 247, 0.35);
       overflow: hidden;
       background-color: rgba(255, 255, 255, 0.05);
       display: flex;
@@ -168,14 +168,14 @@
     .matcha-figure figcaption {
       margin-top: 8px;
       font-size: 12px;
-      color: rgba(169, 216, 201, 0.85);
+      color: rgba(216, 189, 240, 0.85);
       font-style: italic;
     }
 
     .profile-footer {
       margin-top: 36px;
       text-align: center;
-      color: rgba(169, 216, 201, 0.6);
+      color: rgba(216, 189, 240, 0.65);
       font-size: 12px;
       letter-spacing: 0.08em;
     }
@@ -186,7 +186,7 @@
   <main class="profile-main">
     <header class="profile-header">
       <div class="profile-photo-frame">
-        <span class="photo-placeholder-text">images/profile.jpg<br />を配置してください</span>
+        <img src="images/profile.jpg" alt="高村 舞の顔写真" />
       </div>
       <h1 class="profile-name">高村 舞</h1>
       <p class="profile-english-name">E N G L I S H &nbsp;N A M E &nbsp;:&nbsp; M A Y A</p>
@@ -212,9 +212,9 @@
       <p><strong>ラテアート：</strong> 今はできていませんが、学生のときは研究室やアルバイトでラテアートをしていました！お金を貯めてエスプレッソメーカーを買いたいです。</p>
       <figure class="matcha-figure">
         <div class="matcha-photo-frame">
-          <span class="photo-placeholder-text">images/matcha-latte.jpg<br />を配置してください</span>
+          <img src="images/macha-latte.jpg" alt="抹茶ラテの写真" />
         </div>
-        <figcaption>お気に入りの抹茶ラテ</figcaption>
+        <figcaption>バイトで作った抹茶ラテ</figcaption>
       </figure>
     </section>
 
